@@ -9,6 +9,7 @@ A simple web-based tool to convert YAML to JSON and vice versa. This app is buil
 - **Dark Mode**: Toggle between light and dark modes for better readability.
 - **Tab Support**: Properly inserts spaces when pressing the "Tab" key inside text areas.
 - **Simple and Intuitive UI**: Easy to use with a clean interface.
+- **Deploy Easily`: `npm run build` and `npm run deploy`
 
 ## Live Demo
 
