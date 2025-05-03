@@ -35,6 +35,16 @@ To run the tool locally:
 
 4. Visit [http://localhost:5173](http://localhost:5173) to start using the tool locally.
 
+5. Tests
+    ```bash
+    npm run test
+    ```
+
+6. Lint
+    ```bash
+    npm run lint
+    ```
+
 ## Usage
 
 1. **Enter YAML data** in the YAML input box.
