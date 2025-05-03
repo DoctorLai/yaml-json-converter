@@ -11,6 +11,7 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
+    "@testing-library/dom": "^10.4.0",
     "crypto": "^1.0.1",
     "crypto-browserify": "^3.12.1",
     "js-yaml": "^4.1.0",
