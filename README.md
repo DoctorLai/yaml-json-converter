@@ -76,4 +76,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Built with ❤️ by [@justyy](https://github.com/doctorlai).
 - If you found this tool useful, consider buying me a [coffee](https://justyy.com/out/bmc).
-

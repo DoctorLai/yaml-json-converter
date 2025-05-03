@@ -84,6 +84,9 @@ export default function App() {
       <p>
         If you found this useful, consider buying me a <a href="https://justyy.com/out/bmc" target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'underline' }}>coffee</a> ☕
       </p>
+      <p>
+        Open Source on <a href="https://github.com/DoctorLai/yaml-json-converter" target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'underline' }}>GitHub</a>
+      </p>
     </footer>
     </div>
   )
