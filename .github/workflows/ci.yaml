@@ -45,3 +45,7 @@ jobs:
         env:
           CI: true
           NODE_OPTIONS: --enable-source-maps --max-old-space-size=4096  # Optional
+
+      # Build the project
+      - name: Build the project
+        run: npm run build
