@@ -13,7 +13,7 @@ A simple web-based tool to convert YAML to JSON and vice versa. This app is buil
 
 ## Live Demo
 
-You can try the live demo of this tool [TODO).
+You can try the live demo of this tool at [Github Page: Yaml Json Converter](https://doctorlai.github.io/yaml-json-converter/)
 
 ![image](https://github.com/user-attachments/assets/86d78642-6da0-4ad4-b4df-46e64c1873d0)
 
@@ -47,7 +47,7 @@ To run the tool locally:
     npm run lint
     ```
 
-6. Visit [http://localhost:5173](http://localhost:5173) to start using the tool locally.
+6. Visit [http://localhost:5173/yaml-json-converter/](http://localhost:5173/yaml-json-converter/) to start using the tool locally.
 
 ## Usage
 
