@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { convertYamlToJson, convertJsonToYaml } from './converter'
+import { convertYamlToJson, convertJsonToYaml } from '../src/converter'
 
 describe('YAML ↔ JSON converter', () => {
   it('converts YAML to JSON', () => {
