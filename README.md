@@ -1,4 +1,5 @@
 # YAML ↔ JSON Converter
+[![Yaml Json Converter CI](https://github.com/DoctorLai/yaml-json-converter/actions/workflows/ci.yaml/badge.svg)](https://github.com/DoctorLai/yaml-json-converter/actions/workflows/ci.yaml)
 
 A simple web-based tool to convert YAML to JSON and vice versa. This app is built using React and runs in the browser. It provides an easy-to-use interface with two text areas, where you can paste your YAML or JSON data and convert it between formats with just a click!
 
