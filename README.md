@@ -13,6 +13,8 @@ A simple web-based tool to convert YAML to JSON and vice versa. This app is buil
 
 You can try the live demo of this tool [TODO).
 
+![image](https://github.com/user-attachments/assets/86d78642-6da0-4ad4-b4df-46e64c1873d0)
+
 ## Installation
 
 To run the tool locally:
