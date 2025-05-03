@@ -13,6 +13,11 @@ export default defineConfig(({ command }) => ({
     'process.env': {},
   },
   optimizeDeps: {
-    include: ['crypto-browserify'],
-  },  
+    include: ['crypto-browserify']
+  },
+  resolve: {
+    alias: {
+      'crypto': 'crypto-browserify'
+    }
+  },
 }))

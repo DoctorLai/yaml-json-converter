@@ -1,3 +1,2 @@
-// test.setup.js
-import crypto from 'crypto-browserify';
-global.crypto = crypto;
+import { randomUUID } from 'node:crypto'; // Node.js built-in crypto
+global.crypto = { randomUUID };  // Mock or polyfill necessary crypto functions
