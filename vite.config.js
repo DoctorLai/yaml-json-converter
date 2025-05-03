@@ -8,5 +8,11 @@ export default defineConfig(({ command }) => ({
     globals: true,
     environment: "jsdom",
     setupFiles: "./tests/test.setup.js",
-  }
+  },
+  define: {
+    'process.env': {},
+  },
+  optimizeDeps: {
+    include: ['crypto-browserify'],
+  },  
 }))
