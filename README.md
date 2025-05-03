@@ -35,17 +35,17 @@ To run the tool locally:
     npm run dev
     ```
 
-4. Visit [http://localhost:5173](http://localhost:5173) to start using the tool locally.
-
-5. Tests
+4. Tests
     ```bash
     npm run test
     ```
 
-6. Lint
+5. Lint
     ```bash
     npm run lint
     ```
+
+6. Visit [http://localhost:5173](http://localhost:5173) to start using the tool locally.
 
 ## Usage
 
