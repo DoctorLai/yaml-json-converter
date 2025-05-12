@@ -1,11 +1,21 @@
 import './App.css';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { convertYamlToJson, convertJsonToYaml } from './converter'
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(() => {
+    // Load initial value from localStorage
+    const saved = localStorage.getItem('darkMode')
+    return saved === 'true' // convert string to boolean
+  })
+
   const [yamlInput, setYamlInput] = useState('')
   const [jsonInput, setJsonInput] = useState('')
+
+  // Save dark mode to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode)
+  }, [darkMode])
 
   const toJson = () => {
     try {
