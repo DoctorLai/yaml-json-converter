@@ -1,9 +1,9 @@
-import { describe, it, expect } from 'vitest'
-import { convertYamlToJson, convertJsonToYaml } from '../src/functions'
+import { describe, it, expect } from 'vitest';
+import { convertYamlToJson, convertJsonToYaml } from '../src/functions';
 
 describe('YAML ↔ JSON converter', () => {
   it('converts YAML to JSON', () => {
-    const yamlStr = "name: Ryan\nage: 10";
+    const yamlStr = 'name: Ryan\nage: 10';
     const json = convertYamlToJson(yamlStr);
     expect(json).toContain('"name": "Ryan"');
     expect(json).toContain('"age": 10');

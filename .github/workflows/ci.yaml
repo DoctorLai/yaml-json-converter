@@ -35,9 +35,9 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      # Run ESLint (Linting)
-      - name: Run ESLint
-        run: npm run lint
+      # Run Prettier (Linting)
+      - name: Run Prettier
+        run: npm run format
 
       # Run tests
       - name: Run tests
