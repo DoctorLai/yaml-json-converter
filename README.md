@@ -44,7 +44,7 @@ To run the tool locally:
 
 5. Lint
     ```bash
-    npm run lint
+    npm run format
     ```
 
 6. Visit [http://localhost:5173/yaml-json-converter/](http://localhost:5173/yaml-json-converter/) to start using the tool locally.
