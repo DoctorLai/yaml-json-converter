@@ -1,6 +1,6 @@
 import './App.css';
-import React, { useState, useEffect } from 'react'
-import { convertYamlToJson, convertJsonToYaml } from './converter'
+import { useState, useEffect } from 'react'
+import { convertYamlToJson, convertJsonToYaml } from './functions'
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(() => {
