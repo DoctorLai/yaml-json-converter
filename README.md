@@ -37,12 +37,13 @@ To run the tool locally:
     npm run dev
     ```
 
-4. Tests
+4. Tests:
     ```bash
     npm run test
     ```
 
-5. Lint
+5. Format Code:
+    Use `prettier --check` or `prettier --write` to check or format the code.
     ```bash
     npm run format
     ```
@@ -74,5 +75,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Built with ❤️ by [@justyy](https://github.com/doctorlai).
+- Built with ❤️ by [@justyy](https://github.com/doctorlai).\
+- Initial Boilerplate code contributed by ChatGPT-4o and o4-mini.
 - If you found this tool useful, consider buying me a [coffee](https://justyy.com/out/bmc).
