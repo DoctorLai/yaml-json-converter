@@ -73,6 +73,9 @@ Feel free to fork this project and submit issues or pull requests for improvemen
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Documentation
+Here is the [AI generated wiki](https://deepwiki.com/DoctorLai/yaml-json-converter)
+
 ## Acknowledgments
 
 - Built with ❤️ by [@justyy](https://github.com/doctorlai).
