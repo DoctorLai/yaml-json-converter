@@ -33,6 +33,11 @@ export default function App() {
     }
   };
 
+  const clearInputs = () => {
+    setYamlInput('');
+    setJsonInput('');
+  };
+
   // Handle Tab key functionality
   const handleTab = (e, type) => {
     if (e.key === 'Tab') {
@@ -71,14 +76,27 @@ export default function App() {
           <textarea
             value={yamlInput}
             onChange={(e) => setYamlInput(e.target.value)}
-            placeholder='YAML input'
+            placeholder='name: John Doe
+age: 30
+hobbies:
+  - Reading
+  - Traveling
+  - Coding
+'
             style={{ width: '45%', height: '500px' }}
             onKeyDown={(e) => handleTab(e, 'yaml')}
           />
           <textarea
             value={jsonInput}
             onChange={(e) => setJsonInput(e.target.value)}
-            placeholder='JSON input'
+            placeholder='{
+"name": "John Doe",
+"age": 30,
+"hobbies": [
+  "Reading",
+  "Traveling",
+  "Coding"
+]'
             style={{ width: '45%', height: '500px' }}
             onKeyDown={(e) => handleTab(e, 'json')}
           />
@@ -88,6 +106,7 @@ export default function App() {
             Convert to JSON →
           </button>
           <button onClick={toYaml}>← Convert to YAML</button>
+          <button onClick={clearInputs}>❌Clear</button>
         </div>
       </div>
       <footer
