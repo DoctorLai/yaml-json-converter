@@ -46,6 +46,8 @@ To run the tool locally:
     Use `prettier --check` or `prettier --write` to check or format the code.
     ```bash
     npm run format
+    ## Fix the code style automatically
+    npm run format:fix
     ```
 
 6. Visit [http://localhost:5173/yaml-json-converter/](http://localhost:5173/yaml-json-converter/) to start using the tool locally.
