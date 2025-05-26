@@ -70,9 +70,9 @@ export default function App() {
       <button onClick={() => setDarkMode(!darkMode)}>
         {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
       </button>
-      <div style={{ padding: '1rem', fontFamily: 'sans-serif' }}>
+      <div>
         <h1>YAML ↔ JSON Converter</h1>
-        <div style={{ display: 'flex', gap: '1rem' }}>
+        <div>
           <textarea
             value={yamlInput}
             onChange={(e) => setYamlInput(e.target.value)}
@@ -83,7 +83,6 @@ hobbies:
   - Traveling
   - Coding
 '
-            style={{ width: '45%', height: '500px' }}
             onKeyDown={(e) => handleTab(e, 'yaml')}
           />
           <textarea
@@ -97,28 +96,22 @@ hobbies:
   "Traveling",
   "Coding"
 ]'
-            style={{ width: '45%', height: '500px' }}
             onKeyDown={(e) => handleTab(e, 'json')}
           />
         </div>
-        <div style={{ marginTop: '1rem' }}>
-          <button onClick={toJson} style={{ marginRight: '1rem' }}>
-            Convert to JSON →
-          </button>
+        <div>
+          <button onClick={toJson}>Convert to JSON →</button>
           <button onClick={toYaml}>← Convert to YAML</button>
           <button onClick={clearInputs}>❌Clear</button>
         </div>
       </div>
-      <footer
-        style={{ textAlign: 'center', marginTop: '2rem', fontSize: '1rem' }}
-      >
+      <footer>
         <p>
           Made with ❤️ by{' '}
           <a
             href='https://github.com/doctorlai'
             target='_blank'
             rel='noopener noreferrer'
-            style={{ textDecoration: 'none', fontWeight: 'bold' }}
           >
             @justyy
           </a>
@@ -129,7 +122,6 @@ hobbies:
             href='https://justyy.com/out/bmc'
             target='_blank'
             rel='noopener noreferrer'
-            style={{ color: '#007bff', textDecoration: 'underline' }}
           >
             coffee
           </a>{' '}
@@ -141,7 +133,6 @@ hobbies:
             href='https://github.com/DoctorLai/yaml-json-converter'
             target='_blank'
             rel='noopener noreferrer'
-            style={{ color: '#007bff', textDecoration: 'underline' }}
           >
             GitHub
           </a>
