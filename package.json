@@ -9,7 +9,8 @@
     "test": "vitest --watch=false",
     "deploy": "npm run add-version && npm run build && gh-pages -d dist",
     "add-version": "echo \"VITE_COMMIT_HASH=$(git rev-parse --short HEAD)\" > .env",
-    "format": "prettier --check 'src/**/*.{js,jsx}' 'tests/**/*.{js,jsx}'"
+    "format": "prettier --check 'src/**/*.{js,jsx}' 'tests/**/*.{js,jsx}'",
+    "format:fix": "prettier --write 'src/**/*.{js,jsx}' 'tests/**/*.{js,jsx}'"
   },
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
