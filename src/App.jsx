@@ -67,9 +67,6 @@ export default function App() {
 
   return (
     <div className={darkMode ? 'app dark' : 'app'}>
-      <button onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
-      </button>
       <div>
         <h1>YAML ↔ JSON Converter</h1>
         <div>
@@ -103,6 +100,9 @@ hobbies:
           <button onClick={toJson}>Convert to JSON →</button>
           <button onClick={toYaml}>← Convert to YAML</button>
           <button onClick={clearInputs}>❌Clear</button>
+          <button onClick={() => setDarkMode(!darkMode)}>
+            {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
+          </button>
         </div>
       </div>
       <footer>
