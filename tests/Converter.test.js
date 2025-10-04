@@ -15,4 +15,8 @@ describe('YAML ↔ JSON converter', () => {
     expect(yamlOut).toContain('name: Ryan');
     expect(yamlOut).toContain('age: 10');
   });
+  it('handles invalid YAML input gracefully', () => {
+    const invalidYaml = 'name: Ryan\nage: ten'; // 'ten' is not a valid integer
+    expect(() => convertYamlToJson(invalidYaml)).toThrow();
+  });
 });
