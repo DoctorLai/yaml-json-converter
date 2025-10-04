@@ -15,4 +15,14 @@ describe('YAML ↔ JSON converter', () => {
     expect(yamlOut).toContain('name: Ryan');
     expect(yamlOut).toContain('age: 10');
   });
+
+  it('handles invalid YAML input gracefully', () => {
+    const invalidYaml = ' :    Ry   an\nage:'; // Invalid YAML
+    expect(() => convertYamlToJson(invalidYaml)).toThrow();
+  });
+
+  it('handles invalid JSON input gracefully', () => {
+    const invalidJson = '{ name: Ryan, age: 10 '; // Missing closing brace
+    expect(() => convertJsonToYaml(invalidJson)).toThrow();
+  });
 });
