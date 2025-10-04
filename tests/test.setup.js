@@ -1,2 +1,8 @@
-import { randomUUID } from 'node:crypto'; // Node.js built-in crypto
-global.crypto = { randomUUID }; // Mock or polyfill necessary crypto functions
+import { randomUUID } from 'node:crypto';
+
+if (!globalThis.crypto?.randomUUID) {
+  Object.defineProperty(globalThis, 'crypto', {
+    value: { randomUUID },
+    configurable: true,
+  });
+}
