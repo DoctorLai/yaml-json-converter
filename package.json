@@ -7,6 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest --watch=false",
+    "coverage": "vitest run --coverage",
     "deploy": "npm run add-version && npm run build && gh-pages -d dist",
     "add-version": "echo \"VITE_COMMIT_HASH=$(git rev-parse --short HEAD)\" > .env",
     "format": "prettier --check 'src/**/*.{js,jsx}' 'tests/**/*.{js,jsx}'",
