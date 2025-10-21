@@ -1,4 +1,4 @@
-name: Run Tests with Coverage
+name: Test Coverage
 
 on:
   pull_request:
@@ -13,14 +13,17 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
-      - run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run tests with coverage
         run: npx vitest run --coverage
@@ -32,7 +35,7 @@ jobs:
           json-summary-path: coverage/coverage-summary.json
           json-final-path: coverage/coverage-final.json
 
-      - name: Upload coverage artifact
+      - name: Upload coverage report
         if: always()
         uses: actions/upload-artifact@v4
         with:
