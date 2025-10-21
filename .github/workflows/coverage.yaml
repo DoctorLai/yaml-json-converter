@@ -26,7 +26,7 @@ jobs:
         run: npm ci
 
       - name: Run tests with coverage
-        run: npx vitest run --coverage
+        run: npm run coverage
 
       - name: Report coverage on PR
         uses: davelosert/vitest-coverage-report-action@v2
