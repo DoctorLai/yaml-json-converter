@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { convertYamlToJson, convertJsonToYaml } from './functions';
 import {
   languages,
@@ -41,6 +41,7 @@ export default function App() {
     () => localStorage.getItem('jsonInput') || ''
   );
   const [copied, setCopied] = useState('');
+  const copyResetTimer = useRef(null);
 
   const t = getTranslations(language);
   const dir = getDirection(language);
@@ -65,6 +66,13 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('jsonInput', jsonInput);
   }, [jsonInput]);
+
+  // Clear any pending copy-feedback timer when the component unmounts
+  useEffect(() => {
+    return () => {
+      if (copyResetTimer.current) clearTimeout(copyResetTimer.current);
+    };
+  }, []);
 
   const toJson = () => {
     try {
@@ -92,7 +100,8 @@ export default function App() {
     try {
       await navigator.clipboard.writeText(text);
       setCopied(which);
-      setTimeout(() => setCopied(''), 1500);
+      if (copyResetTimer.current) clearTimeout(copyResetTimer.current);
+      copyResetTimer.current = setTimeout(() => setCopied(''), 1500);
     } catch {
       alert(t.copyFailed);
     }

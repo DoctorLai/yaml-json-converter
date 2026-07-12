@@ -140,6 +140,26 @@ describe('App', () => {
     await waitFor(() => expect(window.alert).toHaveBeenCalled());
   });
 
+  it('resets the previous copy-feedback timer when copying again', async () => {
+    const writeText = vi.fn().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, 'clipboard', {
+      value: { writeText },
+      configurable: true,
+    });
+    render(<App />);
+    fireEvent.change(screen.getByLabelText('YAML'), {
+      target: { value: 'a: 1' },
+    });
+    fireEvent.change(screen.getByLabelText('JSON'), {
+      target: { value: '{"a":1}' },
+    });
+    fireEvent.click(screen.getAllByRole('button', { name: /copy/i })[0]);
+    expect(await screen.findByText(/Copied!/i)).toBeInTheDocument();
+    fireEvent.click(screen.getAllByRole('button', { name: /copy/i })[1]);
+    expect(writeText).toHaveBeenCalledTimes(2);
+    expect(await screen.findByText(/Copied!/i)).toBeInTheDocument();
+  });
+
   it('restores the saved language from localStorage on load', () => {
     localStorage.setItem('language', 'de');
     render(<App />);

@@ -40,6 +40,7 @@ export default [
     files: ['tests/**/*.{js,jsx}'],
     languageOptions: {
       globals: {
+        ...globals.browser,
         ...globals.node,
         describe: 'readonly',
         it: 'readonly',
