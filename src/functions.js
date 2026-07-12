@@ -1,4 +1,4 @@
-import yaml from 'js-yaml';
+import { load, dump } from 'js-yaml';
 
 /**
  * Convert a YAML string to a pretty-printed JSON string.
@@ -8,7 +8,7 @@ import yaml from 'js-yaml';
  *   is allowed to propagate so its type and stack trace are preserved.
  */
 export function convertYamlToJson(yamlStr) {
-  const data = yaml.load(yamlStr);
+  const data = load(yamlStr);
   return JSON.stringify(data, null, 2);
 }
 
@@ -20,5 +20,5 @@ export function convertYamlToJson(yamlStr) {
  *   error is allowed to propagate so its type and stack trace are preserved.
  */
 export function convertJsonToYaml(jsonStr) {
-  return yaml.dump(JSON.parse(jsonStr));
+  return dump(JSON.parse(jsonStr));
 }
