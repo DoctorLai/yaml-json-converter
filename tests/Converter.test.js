@@ -25,4 +25,29 @@ describe('YAML ↔ JSON converter', () => {
     const invalidJson = '{ name: Ryan, age: 10 '; // Missing closing brace
     expect(() => convertJsonToYaml(invalidJson)).toThrow();
   });
+
+  it('round-trips JSON → YAML → JSON without data loss', () => {
+    const jsonStr = '{"name":"Ryan","age":10,"hobbies":["a","b"]}';
+    const yamlOut = convertJsonToYaml(jsonStr);
+    const jsonBack = convertYamlToJson(yamlOut);
+    expect(JSON.parse(jsonBack)).toEqual(JSON.parse(jsonStr));
+  });
+
+  it('throws with a descriptive (non-empty) message for malformed YAML', () => {
+    expect(() => convertYamlToJson('"unterminated')).toThrow(/./);
+  });
+
+  it('throws with a descriptive (non-empty) message for malformed JSON', () => {
+    expect(() => convertJsonToYaml('{bad')).toThrow(/./);
+  });
+
+  it('converts a null YAML document to the JSON null literal', () => {
+    expect(convertYamlToJson('null')).toBe('null');
+  });
+
+  it('converts nested structures from YAML to JSON', () => {
+    const yamlStr = 'server:\n  host: localhost\n  ports:\n    - 80\n    - 443';
+    const parsed = JSON.parse(convertYamlToJson(yamlStr));
+    expect(parsed).toEqual({ server: { host: 'localhost', ports: [80, 443] } });
+  });
 });

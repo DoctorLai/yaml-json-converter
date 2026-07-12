@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON Converter",
+  "language": "Taal",
+  "convertToJson": "Naar JSON converteren →",
+  "convertToYaml": "← Naar YAML converteren",
+  "clear": "Wissen",
+  "copy": "Kopiëren",
+  "copied": "Gekopieerd!",
+  "darkMode": "Donkere modus",
+  "lightMode": "Lichte modus",
+  "yamlError": "YAML-analysefout",
+  "jsonError": "JSON-analysefout",
+  "copyFailed": "Kopiëren naar klembord mislukt",
+  "madeWith": "Gemaakt met ❤️ door",
+  "coffeePrompt": "Als dit nuttig was, trakteer me dan op een",
+  "coffee": "koffie",
+  "openSource": "Open source op"
+}

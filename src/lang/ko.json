@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON 변환기",
+  "language": "언어",
+  "convertToJson": "JSON으로 변환 →",
+  "convertToYaml": "← YAML로 변환",
+  "clear": "지우기",
+  "copy": "복사",
+  "copied": "복사됨!",
+  "darkMode": "다크 모드",
+  "lightMode": "라이트 모드",
+  "yamlError": "YAML 구문 분석 오류",
+  "jsonError": "JSON 구문 분석 오류",
+  "copyFailed": "클립보드에 복사하지 못했습니다",
+  "madeWith": "❤️ 으로 제작",
+  "coffeePrompt": "유용했다면 커피 한 잔 사주세요",
+  "coffee": "커피",
+  "openSource": "오픈 소스:"
+}

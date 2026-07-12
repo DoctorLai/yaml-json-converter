@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: '.nvmrc'
           cache: npm
 
       - name: Install dependencies
@@ -30,7 +30,7 @@ jobs:
 
       - name: Report coverage on PR
         uses: davelosert/vitest-coverage-report-action@v2
-        if: github.event_name == 'pull_request'
+        if: always() && github.event_name == 'pull_request'
         with:
           json-summary-path: coverage/coverage-summary.json
           json-final-path: coverage/coverage-final.json

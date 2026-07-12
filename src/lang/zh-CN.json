@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON 转换器",
+  "language": "语言",
+  "convertToJson": "转换为 JSON →",
+  "convertToYaml": "← 转换为 YAML",
+  "clear": "清空",
+  "copy": "复制",
+  "copied": "已复制！",
+  "darkMode": "深色模式",
+  "lightMode": "浅色模式",
+  "yamlError": "YAML 解析错误",
+  "jsonError": "JSON 解析错误",
+  "copyFailed": "复制到剪贴板失败",
+  "madeWith": "用 ❤️ 制作，作者",
+  "coffeePrompt": "如果觉得有用，欢迎请我喝杯",
+  "coffee": "咖啡",
+  "openSource": "开源于"
+}

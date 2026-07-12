@@ -1,4 +1,4 @@
-name: Yaml-Json-Converter (Built, Lint and Test)
+name: CI
 
 on:
   push:
@@ -14,38 +14,35 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # Set up Node.js
+      # Set up Node.js (version pinned via .nvmrc)
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'  # or '20' for the latest LTS
+          node-version-file: '.nvmrc'
+          cache: npm
 
-      # Cache node_modules
-      - name: Cache node modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      # Install dependencies
+      # Install dependencies from the lockfile
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci
 
-      # Run Prettier (Linting)
-      - name: Run Prettier
+      # Check formatting with Prettier
+      - name: Check formatting
         run: npm run format
+
+      # Lint with ESLint
+      - name: Lint
+        run: npm run lint
 
       # Run tests
       - name: Run tests
         run: npm run test
         env:
           CI: true
-          NODE_OPTIONS: --enable-source-maps --max-old-space-size=4096  # Optional
+          NODE_OPTIONS: --enable-source-maps --max-old-space-size=4096
 
       # Build the project
       - name: Build the project
         run: npm run build
+

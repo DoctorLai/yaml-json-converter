@@ -1,0 +1,18 @@
+{
+  "title": "Konverter YAML ↔ JSON",
+  "language": "Bahasa",
+  "convertToJson": "Konversi ke JSON →",
+  "convertToYaml": "← Konversi ke YAML",
+  "clear": "Bersihkan",
+  "copy": "Salin",
+  "copied": "Tersalin!",
+  "darkMode": "Mode Gelap",
+  "lightMode": "Mode Terang",
+  "yamlError": "Kesalahan penguraian YAML",
+  "jsonError": "Kesalahan penguraian JSON",
+  "copyFailed": "Gagal menyalin ke papan klip",
+  "madeWith": "Dibuat dengan ❤️ oleh",
+  "coffeePrompt": "Jika bermanfaat, pertimbangkan untuk membelikan saya",
+  "coffee": "kopi",
+  "openSource": "Sumber terbuka di"
+}

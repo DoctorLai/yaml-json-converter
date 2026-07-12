@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON Dönüştürücü",
+  "language": "Dil",
+  "convertToJson": "JSON'a Dönüştür →",
+  "convertToYaml": "← YAML'a Dönüştür",
+  "clear": "Temizle",
+  "copy": "Kopyala",
+  "copied": "Kopyalandı!",
+  "darkMode": "Koyu Mod",
+  "lightMode": "Açık Mod",
+  "yamlError": "YAML ayrıştırma hatası",
+  "jsonError": "JSON ayrıştırma hatası",
+  "copyFailed": "Panoya kopyalanamadı",
+  "madeWith": "❤️ ile yapıldı",
+  "coffeePrompt": "Faydalı bulduysan bana bir",
+  "coffee": "kahve ısmarla",
+  "openSource": "Açık kaynak"
+}

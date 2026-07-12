@@ -1,0 +1,46 @@
+name: Language Badge
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 3 * * 1' # weekly, Monday 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  language-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate JavaScript percentage badge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          data=$(curl -sf \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/languages")
+          pct=$(echo "$data" | jq -r '([.[]] | add) as $t | (if $t > 0 then ((.JavaScript // 0) / $t * 100) else 0 end) | (. * 10 | round) / 10')
+          echo "JavaScript: ${pct}%"
+          mkdir -p .github/badges
+          jq -n --arg msg "${pct}%" \
+            '{schemaVersion: 1, label: "JavaScript", message: $msg, color: "f1e05a"}' \
+            > .github/badges/javascript.json
+
+      - name: Commit badge if changed
+        run: |
+          if git diff --quiet -- .github/badges/javascript.json; then
+            echo "Badge unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .github/badges/javascript.json
+            git commit -m "chore: update JavaScript language badge [skip ci]"
+            git push
+          fi

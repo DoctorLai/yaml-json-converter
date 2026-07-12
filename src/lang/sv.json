@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON-omvandlare",
+  "language": "Språk",
+  "convertToJson": "Konvertera till JSON →",
+  "convertToYaml": "← Konvertera till YAML",
+  "clear": "Rensa",
+  "copy": "Kopiera",
+  "copied": "Kopierat!",
+  "darkMode": "Mörkt läge",
+  "lightMode": "Ljust läge",
+  "yamlError": "YAML-tolkningsfel",
+  "jsonError": "JSON-tolkningsfel",
+  "copyFailed": "Det gick inte att kopiera till urklipp",
+  "madeWith": "Skapad med ❤️ av",
+  "coffeePrompt": "Om detta var användbart, bjud mig gärna på en",
+  "coffee": "kaffe",
+  "openSource": "Öppen källkod på"
+}

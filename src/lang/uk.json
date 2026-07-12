@@ -1,0 +1,18 @@
+{
+  "title": "Конвертер YAML ↔ JSON",
+  "language": "Мова",
+  "convertToJson": "Перетворити на JSON →",
+  "convertToYaml": "← Перетворити на YAML",
+  "clear": "Очистити",
+  "copy": "Копіювати",
+  "copied": "Скопійовано!",
+  "darkMode": "Темна тема",
+  "lightMode": "Світла тема",
+  "yamlError": "Помилка розбору YAML",
+  "jsonError": "Помилка розбору JSON",
+  "copyFailed": "Не вдалося скопіювати до буфера обміну",
+  "madeWith": "Зроблено з ❤️",
+  "coffeePrompt": "Якщо було корисно, пригостіть мене чашкою",
+  "coffee": "кави",
+  "openSource": "Відкритий код на"
+}

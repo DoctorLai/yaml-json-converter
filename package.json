@@ -1,46 +1,66 @@
 {
   "name": "yaml-json-converter",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "description": "A simple, fast web-based tool to convert YAML to JSON and vice versa, built with React + Vite.",
   "type": "module",
+  "keywords": [
+    "yaml",
+    "json",
+    "converter",
+    "yaml-to-json",
+    "json-to-yaml",
+    "react",
+    "vite"
+  ],
+  "homepage": "https://doctorlai.github.io/yaml-json-converter",
+  "bugs": {
+    "url": "https://github.com/DoctorLai/yaml-json-converter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoctorLai/yaml-json-converter.git"
+  },
+  "license": "MIT",
+  "author": "DoctorLai (https://github.com/doctorlai)",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest --watch=false",
+    "test:watch": "vitest",
     "coverage": "vitest run --coverage",
-    "deploy": "npm run add-version && npm run build && gh-pages -d dist",
-    "add-version": "echo \"VITE_COMMIT_HASH=$(git rev-parse --short HEAD)\" > .env",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --check 'src/**/*.{js,jsx}' 'tests/**/*.{js,jsx}'",
-    "format:fix": "prettier --write 'src/**/*.{js,jsx}' 'tests/**/*.{js,jsx}'"
+    "format:fix": "prettier --write 'src/**/*.{js,jsx}' 'tests/**/*.{js,jsx}'",
+    "check": "npm run format && npm run lint && npm run coverage && npm run build",
+    "deploy": "npm run add-version && npm run build && gh-pages -d dist",
+    "add-version": "echo \"VITE_COMMIT_HASH=$(git rev-parse --short HEAD)\" > .env"
   },
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "crypto": "^1.0.1",
-    "crypto-browserify": "^3.12.1",
     "js-yaml": "^4.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.27.1",
-    "@babel/preset-env": "^7.27.1",
-    "@babel/preset-react": "^7.27.1",
+    "@eslint/js": "^9.15.0",
+    "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@vitejs/plugin-react": "^4.4.1",
-    "@vitest/coverage-v8": "^3.2.4",
-    "babel-jest": "^29.7.0",
+    "@vitest/coverage-v8": "^3.1.4",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "gh-pages": "^6.3.0",
-    "jest": "^29.7.0",
+    "globals": "^15.12.0",
     "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
     "vite": "^6.3.4",
     "vitest": "^3.1.2"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.[t|j]sx?$": "babel-jest"
-    }
-  },
-  "homepage": "https://doctorlai.github.io/yaml-json-converter"
+  }
 }

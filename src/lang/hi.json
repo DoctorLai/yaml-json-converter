@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON कनवर्टर",
+  "language": "भाषा",
+  "convertToJson": "JSON में बदलें →",
+  "convertToYaml": "← YAML में बदलें",
+  "clear": "साफ़ करें",
+  "copy": "कॉपी करें",
+  "copied": "कॉपी हो गया!",
+  "darkMode": "डार्क मोड",
+  "lightMode": "लाइट मोड",
+  "yamlError": "YAML पार्स त्रुटि",
+  "jsonError": "JSON पार्स त्रुटि",
+  "copyFailed": "क्लिपबोर्ड पर कॉपी करने में विफल",
+  "madeWith": "❤️ के साथ बनाया गया",
+  "coffeePrompt": "अगर यह उपयोगी लगा, तो मुझे एक कप दिलाने पर विचार करें",
+  "coffee": "कॉफ़ी",
+  "openSource": "ओपन सोर्स"
+}
