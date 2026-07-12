@@ -1,0 +1,18 @@
+{
+  "title": "ตัวแปลง YAML ↔ JSON",
+  "language": "ภาษา",
+  "convertToJson": "แปลงเป็น JSON →",
+  "convertToYaml": "← แปลงเป็น YAML",
+  "clear": "ล้าง",
+  "copy": "คัดลอก",
+  "copied": "คัดลอกแล้ว!",
+  "darkMode": "โหมดมืด",
+  "lightMode": "โหมดสว่าง",
+  "yamlError": "เกิดข้อผิดพลาดในการแยกวิเคราะห์ YAML",
+  "jsonError": "เกิดข้อผิดพลาดในการแยกวิเคราะห์ JSON",
+  "copyFailed": "ไม่สามารถคัดลอกไปยังคลิปบอร์ด",
+  "madeWith": "สร้างด้วย ❤️ โดย",
+  "coffeePrompt": "หากเป็นประโยชน์ โปรดพิจารณาเลี้ยง",
+  "coffee": "กาแฟ",
+  "openSource": "โอเพนซอร์สบน"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON Converter",
+  "language": "Language",
+  "convertToJson": "Convert to JSON →",
+  "convertToYaml": "← Convert to YAML",
+  "clear": "Clear",
+  "copy": "Copy",
+  "copied": "Copied!",
+  "darkMode": "Dark Mode",
+  "lightMode": "Light Mode",
+  "yamlError": "YAML parse error",
+  "jsonError": "JSON parse error",
+  "copyFailed": "Failed to copy to clipboard",
+  "madeWith": "Made with ❤️ by",
+  "coffeePrompt": "If you found this useful, consider buying me a",
+  "coffee": "coffee",
+  "openSource": "Open Source on"
+}

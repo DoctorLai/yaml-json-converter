@@ -1,0 +1,18 @@
+{
+  "title": "Trình chuyển đổi YAML ↔ JSON",
+  "language": "Ngôn ngữ",
+  "convertToJson": "Chuyển sang JSON →",
+  "convertToYaml": "← Chuyển sang YAML",
+  "clear": "Xóa",
+  "copy": "Sao chép",
+  "copied": "Đã sao chép!",
+  "darkMode": "Chế độ tối",
+  "lightMode": "Chế độ sáng",
+  "yamlError": "Lỗi phân tích YAML",
+  "jsonError": "Lỗi phân tích JSON",
+  "copyFailed": "Không thể sao chép vào bộ nhớ tạm",
+  "madeWith": "Được tạo với ❤️ bởi",
+  "coffeePrompt": "Nếu thấy hữu ích, hãy mời tôi một",
+  "coffee": "ly cà phê",
+  "openSource": "Mã nguồn mở trên"
+}

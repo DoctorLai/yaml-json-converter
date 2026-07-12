@@ -1,0 +1,18 @@
+{
+  "title": "Μετατροπέας YAML ↔ JSON",
+  "language": "Γλώσσα",
+  "convertToJson": "Μετατροπή σε JSON →",
+  "convertToYaml": "← Μετατροπή σε YAML",
+  "clear": "Καθαρισμός",
+  "copy": "Αντιγραφή",
+  "copied": "Αντιγράφηκε!",
+  "darkMode": "Σκοτεινή λειτουργία",
+  "lightMode": "Φωτεινή λειτουργία",
+  "yamlError": "Σφάλμα ανάλυσης YAML",
+  "jsonError": "Σφάλμα ανάλυσης JSON",
+  "copyFailed": "Αποτυχία αντιγραφής στο πρόχειρο",
+  "madeWith": "Φτιάχτηκε με ❤️ από",
+  "coffeePrompt": "Αν σας φάνηκε χρήσιμο, κεράστε μου έναν",
+  "coffee": "καφέ",
+  "openSource": "Ανοιχτού κώδικα στο"
+}

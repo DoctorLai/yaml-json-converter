@@ -1,0 +1,18 @@
+{
+  "title": "مبدل YAML ↔ JSON",
+  "language": "زبان",
+  "convertToJson": "تبدیل به JSON →",
+  "convertToYaml": "← تبدیل به YAML",
+  "clear": "پاک کردن",
+  "copy": "کپی",
+  "copied": "کپی شد!",
+  "darkMode": "حالت تیره",
+  "lightMode": "حالت روشن",
+  "yamlError": "خطای تجزیه YAML",
+  "jsonError": "خطای تجزیه JSON",
+  "copyFailed": "کپی در کلیپ‌بورد ناموفق بود",
+  "madeWith": "ساخته شده با ❤️ توسط",
+  "coffeePrompt": "اگر مفید بود، مرا مهمان یک فنجان کنید",
+  "coffee": "قهوه",
+  "openSource": "متن‌باز در"
+}

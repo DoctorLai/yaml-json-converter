@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON রূপান্তরকারী",
+  "language": "ভাষা",
+  "convertToJson": "JSON এ রূপান্তর করুন →",
+  "convertToYaml": "← YAML এ রূপান্তর করুন",
+  "clear": "মুছুন",
+  "copy": "কপি",
+  "copied": "কপি হয়েছে!",
+  "darkMode": "ডার্ক মোড",
+  "lightMode": "লাইট মোড",
+  "yamlError": "YAML পার্স ত্রুটি",
+  "jsonError": "JSON পার্স ত্রুটি",
+  "copyFailed": "ক্লিপবোর্ডে কপি করতে ব্যর্থ",
+  "madeWith": "❤️ দিয়ে তৈরি করেছেন",
+  "coffeePrompt": "উপকারী মনে হলে আমাকে এক কাপ খাওয়াতে পারেন",
+  "coffee": "কফি",
+  "openSource": "ওপেন সোর্স"
+}

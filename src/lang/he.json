@@ -1,0 +1,18 @@
+{
+  "title": "ממיר YAML ↔ JSON",
+  "language": "שפה",
+  "convertToJson": "המר ל-JSON →",
+  "convertToYaml": "← המר ל-YAML",
+  "clear": "נקה",
+  "copy": "העתק",
+  "copied": "הועתק!",
+  "darkMode": "מצב כהה",
+  "lightMode": "מצב בהיר",
+  "yamlError": "שגיאת ניתוח YAML",
+  "jsonError": "שגיאת ניתוח JSON",
+  "copyFailed": "ההעתקה ללוח נכשלה",
+  "madeWith": "נוצר עם ❤️ על ידי",
+  "coffeePrompt": "אם זה היה שימושי, שקול לקנות לי",
+  "coffee": "קפה",
+  "openSource": "קוד פתוח ב-"
+}

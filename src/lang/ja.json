@@ -1,0 +1,18 @@
+{
+  "title": "YAML ↔ JSON コンバーター",
+  "language": "言語",
+  "convertToJson": "JSON に変換 →",
+  "convertToYaml": "← YAML に変換",
+  "clear": "クリア",
+  "copy": "コピー",
+  "copied": "コピーしました！",
+  "darkMode": "ダークモード",
+  "lightMode": "ライトモード",
+  "yamlError": "YAML 解析エラー",
+  "jsonError": "JSON 解析エラー",
+  "copyFailed": "クリップボードへのコピーに失敗しました",
+  "madeWith": "❤️ を込めて作成",
+  "coffeePrompt": "お役に立てたなら、ぜひ一杯ごちそうしてください",
+  "coffee": "コーヒー",
+  "openSource": "オープンソース："
+}

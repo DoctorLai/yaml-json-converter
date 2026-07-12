@@ -1,0 +1,47 @@
+name: Language Badge
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 3 * * 1' # weekly, Monday 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  language-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate JavaScript percentage badge
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          data=$(curl -sf \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/languages")
+          pct=$(echo "$data" | jq -r '([.[]] | add) as $t | (if $t > 0 then ((.JavaScript // 0) / $t * 100) else 0 end) | (. * 10 | round) / 10')
+          echo "JavaScript: ${pct}%"
+          mkdir -p out
+          jq -n --arg msg "${pct}%" \
+            '{schemaVersion: 1, label: "JavaScript", message: $msg, color: "f1e05a"}' \
+            > out/javascript.json
+
+      # Publish to a dedicated `badges` branch. `main` is protected, so the
+      # generated badge data is kept out of it entirely.
+      - name: Publish badge to the badges branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: badges
+          keep_files: true
+          user_name: 'github-actions[bot]'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+          commit_message: 'chore: update JavaScript language badge'

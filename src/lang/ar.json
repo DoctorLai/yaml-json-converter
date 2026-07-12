@@ -1,0 +1,18 @@
+{
+  "title": "محول YAML ↔ JSON",
+  "language": "اللغة",
+  "convertToJson": "التحويل إلى JSON →",
+  "convertToYaml": "← التحويل إلى YAML",
+  "clear": "مسح",
+  "copy": "نسخ",
+  "copied": "تم النسخ!",
+  "darkMode": "الوضع الداكن",
+  "lightMode": "الوضع الفاتح",
+  "yamlError": "خطأ في تحليل YAML",
+  "jsonError": "خطأ في تحليل JSON",
+  "copyFailed": "فشل النسخ إلى الحافظة",
+  "madeWith": "صُنع بـ ❤️ بواسطة",
+  "coffeePrompt": "إذا وجدت هذا مفيدًا، ففكر في دعوتي إلى فنجان",
+  "coffee": "قهوة",
+  "openSource": "مفتوح المصدر على"
+}

@@ -1,0 +1,29 @@
+version: 2
+updates:
+  # Keep npm dependencies up to date
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 10
+    labels:
+      - 'dependencies'
+    commit-message:
+      prefix: 'chore(deps)'
+    groups:
+      # Batch minor and patch updates into a single PR to reduce noise
+      minor-and-patch:
+        update-types:
+          - 'minor'
+          - 'patch'
+
+  # Keep GitHub Actions up to date
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'dependencies'
+      - 'github-actions'
+    commit-message:
+      prefix: 'chore(ci)'
