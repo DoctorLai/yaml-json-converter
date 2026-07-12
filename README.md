@@ -3,7 +3,7 @@
 <!-- Status -->
 [![CI](https://github.com/DoctorLai/yaml-json-converter/actions/workflows/ci.yaml/badge.svg)](https://github.com/DoctorLai/yaml-json-converter/actions/workflows/ci.yaml)
 [![Test Coverage](https://github.com/DoctorLai/yaml-json-converter/actions/workflows/coverage.yaml/badge.svg)](https://github.com/DoctorLai/yaml-json-converter/actions/workflows/coverage.yaml)
-![JavaScript](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoctorLai/yaml-json-converter/main/.github/badges/javascript.json)
+![JavaScript](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoctorLai/yaml-json-converter/badges/javascript.json)
 ![Top language](https://img.shields.io/github/languages/top/DoctorLai/yaml-json-converter)
 [![Code style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/github/license/DoctorLai/yaml-json-converter)](./LICENSE)
