@@ -41,7 +41,7 @@
     "add-version": "echo \"VITE_COMMIT_HASH=$(git rev-parse --short HEAD)\" > .env"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^5.2.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
