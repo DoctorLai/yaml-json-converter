@@ -41,9 +41,9 @@
     "add-version": "echo \"VITE_COMMIT_HASH=$(git rev-parse --short HEAD)\" > .env"
   },
   "dependencies": {
-    "js-yaml": "^5.4.2",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "js-yaml": "^5.5.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@eslint/compat": "^2.1.1",
@@ -51,17 +51,17 @@
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
-    "@vitejs/plugin-react": "^6.1.1",
+    "@vitejs/plugin-react": "^6.1.2",
     "@vitest/coverage-v8": "^4.1.11",
-    "eslint": "^10.10.0",
+    "eslint": "^10.13.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^7.1.1",
     "gh-pages": "^6.3.0",
-    "globals": "^17.12.0",
+    "globals": "^17.13.0",
     "jsdom": "^29.1.1",
-    "prettier": "^3.9.7",
-    "vite": "^8.3.0",
+    "prettier": "^3.9.10",
+    "vite": "^8.3.5",
     "vitest": "^4.1.11"
   }
 }
